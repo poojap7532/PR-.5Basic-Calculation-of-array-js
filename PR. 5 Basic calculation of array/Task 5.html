@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<body>
+    <!-- 5.Give a Example of Concat , sort,reverse find and findIndex.  -->
+    <script>
+        // 1.concat example----------------
+        let language = ["sandip sir jaiswal is teaching javascript"];
+        let language1 = ["Css is use to designing website"];
+        let language2 = ["boostrap is framework of css"];
+
+        var result = language.concat(language2,language1);
+        document.write(result+"<br>");
+        document.write("<br>");
+
+
+        // 2.sort example-----------------------
+        const user = ["watermelon","pineapple","apple","fig","chickoo","grapes","banana"];
+        user.sort();
+        document.write(user+"<br>");
+        document.write("<br>");
+
+
+        // 3.reverse example-----------------------
+        const user1 = ["watermelon","pineapple","apple","fig","chickoo","grapes","banana"];
+        user1.reverse();
+        document.write(user1+"<br>");
+        document.write("<br>");
+
+        // 4.findIndex example----------------------
+        let number = [2,4,3,43,76,12,9,7,4,3,8,6,4];
+        var win = number.findIndex(x => x>9);
+        document.write(win);
+
+    </script>
+</body>
+</html>

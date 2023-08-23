@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <!-- 3. Display Employee List whose age is greater then 30 . -->
+    <script>
+        
+const employees = [
+  { name: "John", age: 25 },
+  { name: "Alice", age: 32 },
+  { name: "Bob", age: 28 },
+  { name: "Eva", age: 40 },
+];
+
+// Filter employees whose age is greater than 30
+const employeesAbove30 = employees.filter(employee => employee.age > 30);
+
+// Display the filtered employee list
+console.log("Employees above 30:");
+employeesAbove30.forEach(employee => {
+  console.log(`Name: ${employee.name}, Age: ${employee.age}`);
+});
+
+    </script>
+</body>
+</html>

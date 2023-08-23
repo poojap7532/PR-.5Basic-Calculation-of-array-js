@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <!-- 1. Display all employee List Above 50000 RS in Some Object Value . -->
+    <script>
+
+const employees = [
+  { name: "John", salary: 60000 },
+  { name: "Jane", salary: 55000 },
+  { name: "Michael", salary: 48000 },
+];
+
+// Filter employees with salary above 50000 RS
+const highSalaryEmployees = employees.filter(employee => employee.salary > 50000);
+
+// Store the high-salary employees in an object
+const highSalaryEmployeesObject = {};
+highSalaryEmployees.forEach(employee => {
+  highSalaryEmployeesObject[employee.name] = employee.salary;
+});
+
+console.log(highSalaryEmployeesObject);
+
+    </script>
+</body>
+</html>
